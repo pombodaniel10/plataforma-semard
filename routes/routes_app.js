@@ -13,7 +13,7 @@ var client  = mqtt.connect('mqtt://192.168.0.200',{
 
 var messages = "";
 
-var impres;
+var impres = { pT: "impresora", n: "impresora", cC: 40, v: 5, s: "ok"};
 
 client.on('connect', function () {
   client.subscribe('outStepper');
