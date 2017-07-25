@@ -1,0 +1,24 @@
+if user.isAdmin == true
+  extends ../layout.jade
+else
+  extends ../layout-user.jade
+block contenido
+  h1 Impresoras
+  div(class="table-responsive")
+    table(class="table")
+      thead
+        tr
+          th Tipo de impresora
+          th Nombre 
+          th Voltaje
+          th Corriente 
+          th Estado
+          th Tiempo transcurrido
+      tbody
+        tr
+          td= impresora.pT
+          td= impresora.n
+          td= impresora.cC
+          td= impresora.v
+          td= impresora.s
+          td

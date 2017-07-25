@@ -1,0 +1,15 @@
+if user.isAdmin == true
+  extends ../layout.jade
+else
+  extends ../layout-user.jade
+block contenido
+  h1(class='pacifico big blue text-center') Stepper
+  div(class="container text-center")
+  div(class="col-md-3 remove-float center-block top-space text-center")
+    form(action="/app/blackout",method="POST")
+      div(class="form-group ")
+        label(for="vueltas") Número de vueltas
+        input(type="number" name="vueltas" placeholder="Vueltas" class="form-control")
+      input(type="submit" name="clockwise" value="clockwise" class="right-space")
+      input(type="submit" name="counterclockwise" value="counterclockwise")
+    h3(class="top-space") Estado: #{messages}

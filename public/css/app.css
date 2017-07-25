@@ -1,0 +1,88 @@
+html,body{
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+.full-height{
+	height: 100%;
+}
+.lato{
+	font-family: 'Lato', sans-serif;
+}
+.pacifico{
+	font-family: 'Pacifico', cursive;
+}
+.big{
+	font-size: 4em;
+}
+.small{
+	font-size: 12px;
+}
+.right-space{
+  margin-right: 1em;
+}
+.remove-float{
+  float: none;
+}
+.no-float{
+	float: none !important;
+}
+img{
+	max-width: 100%;
+}
+.top-space{
+  margin-top: 1.5em;
+}
+.big-top-space{
+  margin-top: 200px;
+}
+.inline-block{
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
+.carousel-inner img {
+    width: : 100%;/* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    	}
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: black;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}

@@ -1,0 +1,11 @@
+if user.isAdmin == true
+  extends ../layout.jade
+else
+  extends ../layout-user.jade
+block contenido
+  h1(class='pacifico big blue text-center') Luces
+  div(class="container text-center")
+  div(class="col-md-6 remove-float center-block top-space text-center")
+    form(action="/app/luces",method="POST")
+      input(type="submit" name="on" value="on" class="right-space")
+      input(type="submit" name="off" value="off")

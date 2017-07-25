@@ -1,0 +1,13 @@
+extends ./layout_menu.jade
+block contenido
+  div(class="col-md-6 remove-float center-block  big-top-space")
+    p= loginerror
+    form(action="/sessions",method="POST")
+      div(class="form-group")
+        label(for="username") Nombre de usuario
+        input(type="text", name="username",placeholder="Nombre de usuario",id="username", class="form-control")
+      div(class="form-group")
+        label(for="password") Contraseña
+        input(type="password", name="password",placeholder="Contraseña",id="password",class="form-control")
+      div(class="form-group top-space text-center")
+        input(type="submit", value="Iniciar sesión", class="btn btn-info")

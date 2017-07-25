@@ -1,0 +1,31 @@
+extends ../../layout.jade
+block contenido
+  h1 Panel de administración
+  div(class="table-responsive")
+    table(class="table")
+      caption Cuentas activas
+      thead
+        tr
+          th #
+          th Nombre
+          th Nombre de usuario
+          th Email
+          th Contraseña
+          th Admin
+          th Acciones
+      tbody
+        each user in users
+          tr
+            td= user._id
+            td= user.name
+            td= user.username
+            td= user.email
+            td= user.password
+            td= user.isAdmin
+            td
+              a(href="") Editar
+              =" - "
+              a(href="") Eliminar
+  div(class="col-md-8 remove-float center-block text-center top-space")
+    a(href="/app/admin/signup", class="right-spacer btn btn-info") Agregar nuevo usuario
+          

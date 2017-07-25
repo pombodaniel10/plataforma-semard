@@ -1,0 +1,39 @@
+doctype html
+html(lang="es")
+  head
+    title Semard
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    link(rel="stylesheet", href="/public/css/app.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link(href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
+  body
+    nav(class="navbar navbar-default")
+      div(class="container-fluid")
+        div(class="navbar-header")
+          button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar")
+            span(class="icon-bar")
+            span(class="icon-bar")
+            span(class="icon-bar")
+          a(class="navbar-brand pacifico" href="/app/admin") Semard
+        div(class="collapse navbar-collapse" id="myNavbar")
+          ul(class="nav navbar-nav navbar-right")
+            li(class="inline-block")
+              a(href="/app/admin")  Plataforma
+                i(class="material-icons") settings
+            li(class="inline-block")
+              a(href="/app/myaccountA" ) Mi cuenta
+                i(class="material-icons") account_box
+            li(class="inline-block")
+              a(href="/app/admin/manage")  Administrar cuentas
+                i(class="material-icons") group
+            li(class="inline-block")
+              a(href="/signout") Salir
+                i(class="material-icons") exit_to_app
+                             
+    block contenido
+    

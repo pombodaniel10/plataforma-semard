@@ -1,0 +1,34 @@
+extends ../layout-user.jade
+block contenido
+  h1(class='pacifico big blue text-center') Hola #{user.username}
+  div(class="container text-center")
+    h3 Plataforma
+    p Manejar los servicios del laboratorio
+    br
+    hr
+    div(class="row")
+      div(class="col-sm-6 col-md-4 col-xs-12")
+        a(href="/app/blackout")
+          p
+            strong Blackout
+          img(src="/public/imgs/blackout.jpg" alt="Blackout")
+      div(class="col-sm-6 col-md-4 col-xs-12")
+        a(href="/app/luces")
+          p
+            strong Luces
+          img(src="/public/imgs/foco.jpg" alt="Luces")
+      div(class="col-sm-6 col-md-4 col-xs-12")
+        p
+          strong Ventiladores
+        img(src="/public/imgs/ventilador.png" alt="Ventilador")
+    hr
+    div(class="row")  
+      div(class="col-sm-6 col-md-6 col-xs-12")
+        p
+          strong Aire acondicionado
+        img(src="/public/imgs/aire.jpg" alt="aire")
+      div(class="col-sm-6 col-md-6 col-xs-12")
+        a(href="/app/impresora")
+          p
+            strong Impresoras
+          img(src="/public/imgs/impresora.jpg" alt="Impresora")
